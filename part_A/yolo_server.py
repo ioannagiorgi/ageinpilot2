@@ -138,28 +138,35 @@ while r!= 'end':
             colour = recognised_colour
             if colour in ["Plum (Traditional)", "Fandango", "Boysenberry", "Royal Fuchsia", "Mulberry", "Persian Pink", "Hot Pink", "Brilliant Rose", "Pale Magenta", "Sky Magenta", \
                         "Deep Carmine", "Tuscan Red", "Rich Maroon", "Mountbatten Pink", "Big Dip O'Ruby", "Aurometalsaurus", "Medium Ruby", "Rose Vale", "Copper Rose", "China Rose", \
-                        "Raspberry Rose", "Raspberry Pink", "Rose Pink", "Rich Brilliant Lavender", "Pansy Purple", "Pink Sherbet"]:
+                        "Raspberry Rose", "Raspberry Pink", "Rose Pink", "Rich Brilliant Lavender", "Pansy Purple", "Pink Sherbet", \
+                        "Amaranth","Brink Pink","Cerise","Dogwood Rose","French Rose","Fuchsia Rose","Folly","Raspberry","Razzmatazz","Raspberry Rose","Rose red","Telemagenta"]:
                 colour = "RED"
                 supp_index = 'supp_01'
             elif colour in ["Baby Blue Eyes", "Maya Blue", "Light Sky Blue", "Cornflower Blue", "United Nations Blue", "Dodger Blue", "Bleu De France", "Steel Blue", "Lapis Lazuli", "Honolulu Blue", \
-                            "Blue (Ncs)", "Yale Blue", "Ucla Blue", "Indigo (Dye)", "Sapphire Blue", "Teal Blue", "Sky Blue", "Air Force Blue (Raf)", "Air Force Blue (Usaf)", "Air Superiority Blue", "Alice Blue", "Ball Blue"]:
+                            "Blue (Ncs)", "Yale Blue", "Ucla Blue", "Indigo (Dye)", "Sapphire Blue", "Teal Blue", "Sky Blue", "Air Force Blue (Raf)", "Air Force Blue (Usaf)", "Air Superiority Blue", "Alice Blue", \
+                            "Ball Blue", "Baby Blue", "Columbia Blue", "Light Blue", "Light Sky Blue", "Periwinkle", "Powder Blue (Web)", "Sky Blue"]:
                 colour = "BLUE"
                 supp_index = 'supp_02'
-            elif colour in ["Peach", "Persian Orange", "Bronze", "Copper", "Antique Brass", "Tiger'S Eye", "Peru", "Golden Brown", "Golden Yellow", "Fluorescent Orange", "Fluorescent Yellow"]:
+            elif colour in ["Peach", "Persian Orange", "Bronze", "Copper", "Antique Brass", "Tiger'S Eye", "Peru", "Golden Brown", "Golden Yellow", "Fluorescent Orange", "Fluorescent Yellow", \
+                            "Aureolin", "Canary Yellow", "Golden Yellow", "Icterine", "Jonquil", "Maize", "Mustard", "Naples Yellow", "School Bus Yellow", "Stil De Grain Yellow", "Sunglow", "Yellow"]:
                 colour = "ORANGE"
                 supp_index = 'supp_03'
             elif colour in ["Platinum", "White", "Floral White", "Pale Aqua", "Lavender Gray", "Wild Blue Yonder", "Pastel Blue", "Cadet Gray", "Trolley Gray", "Taupe Gray", "Dark Gray", "Ash Gray",\
-                             "Manatee", "Gray (X11 Gray)", "Pale Cornflower Blue", "Cool Gray"]:
+                             "Manatee", "Gray (X11 Gray)", "Pale Cornflower Blue", "Cool Gray", \
+                            "Ghost White","Magnolia","Mint Cream","White","White Smoke","Snow"]:
                 colour = "WHITE"
                 supp_index = 'supp_04'
-            elif colour in ["Sea Green", "Hooker'S Green", "Viridian", "Feldgrau", "Cal Poly Green", "Stormcloud", "Asparagus"]:
+            elif colour in ["Sea Green", "Hooker'S Green", "Viridian", "Feldgrau", "Cal Poly Green", "Stormcloud", "Asparagus", \
+                            "Bright Green","Dark Pastel Green","Green (Color Wheel) (X11 Green)","Harlequin","Kelly Green","Lime Green","Malachite","Neon Green","Lawn Green","Yellow-Green"]:
                 colour = "GREEN"
                 supp_index = 'supp_05'
-            elif colour in ["Pistachio", "Fern Green", "Olive Drab (Web) (Olive Drab #3)", "Camouflage Green", "Dark Tan", "Android Green", "Apple Green"]:
+            elif colour in ["Pistachio", "Fern Green", "Olive Drab (Web) (Olive Drab #3)", "Camouflage Green", "Dark Tan", "Android Green", "Apple Green", \
+                            "Green-Yellow", "Chartreuse (Traditional)","Chartreuse (Web)","Lime (Color Wheel)","Spring Bud","Pale Spring Bud","Mint Green","Pistachio"]:
                 colour = "MINT"
                 supp_index = 'supp_06'
             elif colour in ["Majorelle Blue", "Onyx", "Arsenic", "Outer Space", "Payne'S Gray", "Old Lavender", "Ucla Blue", "Davy'S Gray", "Light Slate Gray", "Cadet", "Quartz", "Purple Taupe", \
-                            "Slate Gray", "Pastel Purple", "Dark Slate Blue", "Medium Slate Blue", "Ube", "Royal Purple"]:
+                            "Slate Gray", "Pastel Purple", "Dark Slate Blue", "Medium Slate Blue", "Ube", "Royal Purple", \
+                            "Amethyst","Blue-Violet","Dark Violet","Electric Purple","Iris","Lavender (Floral)","Royal Purple","Slate Blue","Veronica","Violet"]:
                 colour = "PURPLE"
                 supp_index = 'supp_07'
             else:
