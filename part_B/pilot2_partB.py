@@ -307,7 +307,7 @@ class Nao:
                     box_colour = filename.read()
                     print(box_colour)
                     filename.close()
-                    self.tts.say("Before you leave \\pau=50\\ Can you please take the "+box_colour+" supplement from the table? \\pau=700\\ I repeat, \\pau=500\\ the "+box_colour+"\\pau=1000\\ Based on your answers in the wellbeing questionnaire \\pau=500\\, I would like to suggest this additional supplement to you. \\pau=1500\\")
+                    self.tts.say("Before you leave \\pau=50\\ Can you please take the "+box_colour+" supplement from the table? \\pau=700\\ I repeat, \\pau=500\\ the "+box_colour+" supplement \\pau=1000\\ Based on your answers in the wellbeing questionnaire \\pau=500\\, I would like to suggest this additional supplement to you. \\pau=1500\\")
                     with open(third_supplement) as f:
                         if 'red' in f.read():
                             supp_index = "supp_01"
