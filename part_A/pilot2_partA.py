@@ -440,7 +440,7 @@ if __name__ == '__main__':
     #nao.start_behaviour()
     #nao.real_time_speech()
 
-    robotIP='10.188.222.81' #CHANGE THE IP HERE 192.168.1.102
+    robotIP='192.168.1.102' #CHANGE THE IP HERE 192.168.1.102
     #robotIP='129.12.41.121'
     port='9559'
     parser = argparse.ArgumentParser()

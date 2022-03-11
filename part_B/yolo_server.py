@@ -181,7 +181,7 @@ while r!= 'end':
             break
         
     r = socket.recv_json()
-    socket.send(b'done')
-    socket.close()
+socket.send(b'done')
+socket.close()
   
 
