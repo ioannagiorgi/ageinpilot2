@@ -287,7 +287,8 @@ class Nao:
             self.startMicrophonesRecording(record_path, 'wav', 16000, (1,0,0,0))
             time.sleep(2)
             self.take_picture()
-            time.sleep(6)
+            response =  self.process_frame()
+            time.sleep(2)
             self.stopMicrophonesRecording()
             print ('sshpass -p nao scp nao@'+robotIP+':/home/nao/record.wav ' + PATH + '/record.wav')
             cmd = 'sshpass -p nao scp nao@'+robotIP+':/home/nao/record.wav ' + PATH + '/record.wav'
@@ -315,7 +316,6 @@ class Nao:
                 if userspeech_stt == 'Sorry.. run again...':
                     self.tts.say("I am sorry \\pau=40\\ i did not understand you. \\pau=60\\ can you please repeat")
                 else:
-                    response =  self.process_frame()
                     print(response)
                     if response != 'False':
                         supp_index = response
@@ -336,7 +336,7 @@ class Nao:
                         self.tts.say(str(nao_replies).encode('ascii', 'ignore'))  # speak the reply from NLP
             else:
                 self.startMicrophonesRecording(record_path, 'wav', 16000, (1,0,0,0))
-                time.sleep(6)
+                time.sleep(5)
                 self.stopMicrophonesRecording()
                 cmd = 'sshpass -p nao scp nao@'+robotIP+':/home/nao/record.wav ' + PATH  + '/record.wav'
                 os.system(cmd)
