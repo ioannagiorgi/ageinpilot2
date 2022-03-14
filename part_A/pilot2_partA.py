@@ -336,7 +336,7 @@ class Nao:
                         self.tts.say(str(nao_replies).encode('ascii', 'ignore'))  # speak the reply from NLP
             else:
                 self.startMicrophonesRecording(record_path, 'wav', 16000, (1,0,0,0))
-                time.sleep(6)
+                time.sleep(6) #leave 6 seconds here, otherwise it will not wait enough before asking if the participant has more questions
                 self.stopMicrophonesRecording()
                 cmd = 'sshpass -p nao scp nao@'+robotIP+':/home/nao/record.wav ' + PATH  + '/record.wav'
                 os.system(cmd)
